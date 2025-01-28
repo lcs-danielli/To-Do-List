@@ -16,6 +16,11 @@
 			path = "To Do List";
 			sourceTree = "<group>";
 		};
+		656945692D47D5D300853DAC /* Helpers */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = Helpers;
+			sourceTree = "<group>";
+		};
 /* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -34,6 +39,7 @@
 			children = (
 				6569454F2D47D14A00853DAC /* To Do List */,
 				6569454E2D47D14A00853DAC /* Products */,
+				656945692D47D5D300853DAC /* Helpers */,
 			);
 			sourceTree = "<group>";
 		};
@@ -62,6 +68,7 @@
 			);
 			fileSystemSynchronizedGroups = (
 				6569454F2D47D14A00853DAC /* To Do List */,
+				656945692D47D5D300853DAC /* Helpers */,
 			);
 			name = "To Do List";
 			packageProductDependencies = (
