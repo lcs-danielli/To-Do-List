@@ -82,7 +82,7 @@ struct LandingView: View {
             modelContext.delete(todos[offset])
         }
     }
-    
+     
     
     
 }
