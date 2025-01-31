@@ -4,7 +4,7 @@
 //
 //  Created by 李泽宇 on 2025-01-27.
 //
-
+import SwiftData
 import SwiftUI
 
 struct LandingView: View {
@@ -18,6 +18,8 @@ struct LandingView: View {
     @State var searchText = ""
     
     @State var todos: [ToDoItem] = exampleItems
+    
+    @Environment(\.modelContext) var modelContext
     
     // Mark: Computed Properties
     var body: some View {
