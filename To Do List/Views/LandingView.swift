@@ -72,7 +72,7 @@ struct LandingView: View {
                 todo
             )
     }
-    
+     
     func delete(_ todo: ToDoItem) {
         
         //Remove the provided To-do item from the array
