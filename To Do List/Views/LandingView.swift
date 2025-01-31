@@ -25,7 +25,9 @@ struct LandingView: View {
             VStack {
                 
                 List {
-                    
+                    Text("Study For My Chemistry Test")
+                    Text("Finish Computer Science Assignment")
+                    Text("Go for a run around campus")
                 }
                 
                 HStack {
