@@ -20,7 +20,7 @@ struct LandingView: View {
     //Access the model Text
     @Environment(\.modelContext) var modelContext
     
-    @Query var todos: [ToDoItem]
+    @Query var todos: [TodoItem]
     
     // Mark: Computed Properties
     var body: some View {
@@ -52,6 +52,9 @@ struct LandingView: View {
                 .padding(20)
             }
             .navigationTitle("TO DO LIST")
+            .onAppear {
+                printCommandToOpenDatabaseFile()
+            }
         }
     }
 
@@ -59,7 +62,7 @@ struct LandingView: View {
     func createToDo(withTitle title: String) {
         
         //Create the new to-do Item instance
-        let todo = ToDoItem (
+        let todo = TodoItem (
             title: title,
             done: false
         )
