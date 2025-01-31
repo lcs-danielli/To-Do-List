@@ -5,13 +5,15 @@
 //  Created by 李泽宇 on 2025-01-27.
 //
 
+import SwiftData
 import SwiftUI
 
 @main
-struct To_Do_ListApp: App {
+struct ToDoListApp: App {
     var body: some Scene {
         WindowGroup {
             LandingView()
+                .modelContainer(for: ToDoItem.self)
         }
     }
 }
