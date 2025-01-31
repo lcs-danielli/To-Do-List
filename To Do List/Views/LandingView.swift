@@ -59,9 +59,7 @@ struct LandingView: View {
     }
 
     //Mark: Functions
-    func createToDo(
-        withTitle title: String
-    ) {
+    func createToDo(withTitle title: String) {
         
         //Create the new to-do Item instance
         let todo = ToDoItem (
@@ -74,8 +72,18 @@ struct LandingView: View {
                 todo
             )
     }
+    
+    func delete(_ todo: ToDoItem) {
+        
+        //Remove the provided To-do item from the array
+        todos.removeAll { currentItem in
+            currentItem.id == todo.id
+        }
+    }
+    
+    
+    
 }
-
 
 #Preview {
     LandingView()
