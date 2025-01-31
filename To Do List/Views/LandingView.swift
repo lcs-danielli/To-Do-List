@@ -29,10 +29,17 @@ struct LandingView: View {
                     Text("Finish Computer Science Assignment")
                     Text("Go for a run around campus")
                 }
+                .searchable(text: $searchText)
                 
                 HStack {
+                    TextField("Enter a to-do item", text: $newItemDescirption)
                     
+                    Button("ADD") {
+                        // Add the new to-do Item
+                    }
+                    .font(.caption)
                 }
+                .padding(20)
             }
             .navigationTitle("TO DO LIST")
         }
