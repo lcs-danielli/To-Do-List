@@ -69,6 +69,8 @@ struct LandingView: View {
         
         // Use the model context to insert the new to-do
         modelContext.insert(todo)
+        
+        newItemDescirption = ""
     }
      
     func removeRows(at offsets: IndexSet) {
@@ -87,8 +89,9 @@ struct LandingView: View {
     
 }
 
-//#Preview {
-//    LandingView()
-//}
+#Preview {
+    LandingView()
+        .modelContainer(TodoItem.preview)
+}
 
 
